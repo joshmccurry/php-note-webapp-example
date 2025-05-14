@@ -92,7 +92,7 @@ if (!empty($_GET['dl'])) {
                         <tr>
                             <?php foreach ($notes as $row): ?>
                             <td>
-                                <?= htmlspecialchars(substr($row['title'], 0, 15), ENT_QUOTES, 'UTF-8') ?>
+                                <?= htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8') ?>
                             </td>
                             <td class="text-right"><?= date('H:i', strtotime($row['created'])) ?></td>
                             <td class="text-right"><?= date('d/m/Y', strtotime($row['created'])) ?></td>

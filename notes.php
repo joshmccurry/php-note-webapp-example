@@ -4,7 +4,7 @@ class Notes {
 
     private $pdo;
 
-    const dbFile = 'db.sqlite';
+    const dbFile = '/home/site/wwwroot/db.sqlite';
 
     function __construct() {
         $this->pdo = new PDO('sqlite:'.self::dbFile);

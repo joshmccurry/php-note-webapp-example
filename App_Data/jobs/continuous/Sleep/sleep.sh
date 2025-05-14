@@ -8,8 +8,7 @@ do
     cd /home/site/wwwroot
     php add.php
     rand=$(php sleep.php)
-    dat=$(($rand % 2))
-    if [ $dat -eq 0 ]; then
+    if [ $dat -lt 10 ]; then
         echo "Exiting Sleep..."
         break
     else
